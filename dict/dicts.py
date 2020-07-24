@@ -1,14 +1,17 @@
 def clear_dict(dict):
+    return dict.clear()
     # delete everything in dict and return it
 
 def get_dict_items(dict):
+    return dict.items()
     # return keys and values of dict
 
 def get_dict_keys(dict):
-    # return keys of dict
+    return dict.keys()
 
 def get_dict_value_by_key(dict, key):
-    # return values of dict that is stored in key
+    return dict.get(key)
 
 def delete_dict_element_by_key(dict, key):
-    # delete and element from dict, such that its key is the argument key
+    return dict.pop(key)
+
