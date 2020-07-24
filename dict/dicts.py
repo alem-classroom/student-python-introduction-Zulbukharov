@@ -1,5 +1,6 @@
 def clear_dict(dict):
-    return dict.clear()
+    dict.clear()
+    return {}
     # delete everything in dict and return it
 
 def get_dict_items(dict):
@@ -13,5 +14,5 @@ def get_dict_value_by_key(dict, key):
     return dict.get(key)
 
 def delete_dict_element_by_key(dict, key):
-    return dict.pop(key)
+    if key in dict: del dict[key]
 
